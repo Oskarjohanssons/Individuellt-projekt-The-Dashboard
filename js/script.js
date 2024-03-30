@@ -365,5 +365,4 @@ async function fetchCryptoPrices() {
     }
 }
 
-// Anropa funktionen för att hämta och visa aktuella kryptovalutakurser
 fetchCryptoPrices();

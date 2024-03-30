@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oskar Johansson Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="clock">
+                <span id="time" class="time-bold">10:10</span>
+                <span id="date">1 april 2024</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="username">
+        <h1 id ="usernameDisplay" onclick="changeUsername()">Oskar Johansson Dashboard</h1>
+    </div>
+
+    <section>
+        <div class="dashboard">
+            <ul class="dashboard-section">
+                <h3>Snabblänkar</h3>
+                <ul id="quick-links-list">
+                    <!-- Sparade länkar visas här -->
+                    <li>
+                        <a href="https://www.google.com"><img src="images/google.png" alt="" style="max-width: 24px; max-height: 24px;"> Google</a> <button class="removebtn">-</button>
+                    </li>
+                    <li>
+                        <a href="https://chat.openai.com"><img src="images/github.256x250.png" alt="" style="max-width: 24px; max-height: 24px;">  ChatGPT</a> <button class="removebtn">-</button>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/"><img src="images/youtube.256x180.png" alt="" style="max-width: 24px; max-height: 24px;">  Youtube</a><button class="removebtn">-</button>
+                    </li>
+                    <li>
+                        <a href="https://github.com/"><img src="images/github.256x250.png" alt="" style="max-width: 24px; max-height: 24px;">  Github</a><button class="removebtn">-</button>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/oskar-johansson-17775129a/"><img src="images/linkedin.256x256.png" alt="" style="max-width: 24px; max-height: 24px;"> LinkedIn</a><button class="removebtn">-</button>
+                    </li>
+                </ul>
+                <div>
+                    <button id="add-link-btn" class="anteckningbtn">Lägg till länk</button>
+                </div>
+            </ul>
+    
+            <!-- Modalen -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <input type="text" id="modal-title" placeholder="Titel">
+                    <input type="text" id="modal-url" placeholder="URL">
+                    <button onclick="addQuickLinkFromModal()">Lägg till</button>
+                </div>
+            </div>
+    
+            <!-- Väderprognos -->
+            <ul class="dashboard-section">
+                <h3>Väderprognos</h3>
+                <ul id="weather-list">
+                    <!-- Väderinformation visas här -->
+                </ul>
+            </ul>
+            
+            <!--Kryptovalutakurser-->
+            <ul class="dashboard-section">
+                <h3>Aktuella kryptovalutakurser</h3>
+                <ul id="crypto-prices">
+                    <!-- Kryptovalutakurser visas här -->
+                </ul>
+            </ul>
+            
+    
+            <!-- Anteckningar -->
+            <ul class="dashboard-section">
+                <h3>Anteckningar</h3>
+                <textarea id="noteInput" placeholder="Skriv din anteckning här"></textarea>
+                <!-- Anteckningar visas här -->
+            </ul>
+    
+        </div>
+    
+        <button class="nybildbtn" onclick="changeBackground()">Slumpa ny bakgrundsbild</button>
+        <!-- Bakgrundsbild ändras här -->
+    </section>
+    
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

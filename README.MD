@@ -34,7 +34,7 @@ Genom att fortsätta arbeta med dessa förbättringsområden kan jag fortsätta 
 ## Installation
 
 Klona projektet från GitHub-repositoriet.
-Öppna index.html i din webbläsare.
+<p>Öppna index.html i din webbläsare.</p>
 
 ## Användning
 

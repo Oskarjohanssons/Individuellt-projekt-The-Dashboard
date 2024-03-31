@@ -342,27 +342,41 @@ function getFormattedTemperature(kelvinTemp) {
 
 
 
-//<------ KRYPTOVALUTA ------->
-// Funktion för att hämta och visa aktuella kryptovalutakurser
-async function fetchCryptoPrices() {
+//<------ VALUTAKURSER ------->
+// Funktion för att hämta och visa aktuella valutakurser
+async function fetchCurrencyRates() {
     try {
-        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum,bitcoin,dogecoin&vs_currencies=usd');
+        const response = await fetch('https://api.exchangerate-api.com/v4/latest/SEK');
         
         if (!response.ok) {
-            throw new Error('Kunde inte hämta aktuella kryptovalutakurser');
+            throw new Error('Kunde inte hämta valutakurser');
         }
 
         const data = await response.json();
 
-        const cryptoPricesList = document.getElementById('crypto-prices');
-        cryptoPricesList.innerHTML = `
-            <li>Ethereum (ETH): $${data.ethereum.usd}</li>
-            <li>Bitcoin (BTC): $${data.bitcoin.usd}</li>
-            <li>Dogecoin (DOGE): $${data.dogecoin.usd}</li>
-        `;
+        // Skapa en lista med valutakurser
+        const currencyRates = [
+            { name: 'US Dollar (USD)', rate: 1 / data.rates.USD },
+            { name: 'Euro (EUR)', rate: 1 / data.rates.EUR },
+            { name: 'British Pound (GBP)', rate: 1 / data.rates.GBP },
+            { name: 'Japanese Yen (JPY)', rate: 1 / data.rates.JPY }
+        ];
+
+        // Skapa HTML-strängen för valutakurserna
+        const currencyRatesHTML = currencyRates.map(currency => `
+            <li>${currency.name}: 1 ${currency.name.split('(')[1].split(')')[0]} = ${currency.rate.toFixed(2)} SEK</li>
+        `).join('');
+
+        // Uppdatera listan med valutakurser i DOM
+        const currencyRatesList = document.getElementById('currency-rates');
+        currencyRatesList.innerHTML = currencyRatesHTML;
     } catch (error) {
         console.error(error);
     }
 }
 
-fetchCryptoPrices();
+fetchCurrencyRates();
+
+
+
+

@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-size: cover;
@@ -22,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: #fff;
+    color: #333;
     margin-top: 15rem;
 }
 
@@ -201,4 +202,12 @@ body {
         width: 45%;
         margin-bottom: 20px;
     }
+}
+
+#currency-rates li {
+    border: 1px solid #000000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }

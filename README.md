@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # The Dashboard
 
+=======
+>>>>>>> 183847d5f80330691b9e5875ce28e3ac7115fe2f
 Resonemang kring min kodkvalitet
 I detta projekt har jag strävat efter att skapa en välstrukturerad och organiserad kodbas för att underlätta underhåll och förbättra skalbarheten. Genom att separera HTML-, CSS- och JavaScript-koden i olika filer blir det enklare att navigera och hantera koden.
 
@@ -23,6 +26,7 @@ Tillgänglighet: Jag bör också ta hänsyn till tillgänglighetsaspekter, såso
 
 Genom att fortsätta arbeta med dessa förbättringsområden kan jag fortsätta att förbättra kodkvaliteten och användarupplevelsen för mitt projekt.
 
+<<<<<<< HEAD
 
 ## Installation
 
@@ -40,6 +44,16 @@ För att rensa all sparad data, klicka på "Rensa".
 ## Tekniker och API:er
 
 <h2>Tekniker och API:er</h2>
+=======
+Installation
+Klona projektet från GitHub-repositoriet.
+Öppna index.html i din webbläsare.
+Användning
+För att lägga till en snabblänk, klicka på "Lägg till länk" och fyll i titel och URL i modalen som visas.
+För att ändra bakgrundsbilden, klicka på "Slumpa ny bakgrundsbild".
+För att rensa all sparad data, klicka på "Rensa".
+Tekniker och API:er
+>>>>>>> 183847d5f80330691b9e5875ce28e3ac7115fe2f
 HTML
 CSS
 JavaScript

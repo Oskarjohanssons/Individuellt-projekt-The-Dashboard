@@ -28,26 +28,26 @@ För att förbättra webbplatsens prestanda kan jag optimera bilder och andra re
 <h3>Tillgänglighet:</h3>
 Jag bör också ta hänsyn till tillgänglighetsaspekter, såsom att se till att webbplatsen är navigerbar och användbar för personer med olika funktionsnedsättningar genom att tillhandahålla alternativa texter för bilder och använda semantiska HTML-element.
 
-Genom att fortsätta arbeta med dessa förbättringsområden kan jag fortsätta att förbättra kodkvaliteten och användarupplevelsen för mitt projekt.
+<p>Genom att fortsätta arbeta med dessa förbättringsområden kan jag fortsätta att förbättra kodkvaliteten och användarupplevelsen för mitt projekt.</p>
 
 
 ## Installation
 
-Klona projektet från GitHub-repositoriet.
-<p>Öppna index.html i din webbläsare.</p>
+1. Klona projektet från GitHub-repositoriet.
+2. <p>Öppna index.html i din webbläsare.</p>
 
 ## Användning
 
 För att lägga till en snabblänk, klicka på "Lägg till länk" och fyll i titel och URL i modalen som visas.
-För att ändra bakgrundsbilden, klicka på "Slumpa ny bakgrundsbild".
-För att rensa all sparad data, klicka på "Rensa".
+<p>För att ändra bakgrundsbilden, klicka på "Slumpa ny bakgrundsbild".</p>
+<p>För att rensa all sparad data, klicka på "Rensa".</p>
 
 ## Tekniker och API:er
 
-HTML
-CSS
-JavaScript
-localStorage för att spara användardata
-Fetch API för att hämta väderdata och valutakurser
-OpenWeatherMap API för väderdata
-ExchangeRate API för valutakurser
+<p>HTML</p>
+<p>CSS</p>
+<p>JavaScript</p>
+<p>localStorage för att spara användardata</p>
+<p>Fetch API för att hämta väderdata och valutakurser</p>
+<p>OpenWeatherMap API för väderdata</p>
+<p>ExchangeRate API för valutakurser</p>

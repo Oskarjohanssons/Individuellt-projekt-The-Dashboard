@@ -377,6 +377,16 @@ async function fetchCurrencyRates() {
 
 fetchCurrencyRates();
 
+// Funktion för att rensa all data från localStorage
+function clearLocalStorage() {
+    localStorage.clear();
+    
+    document.getElementById('noteInput').value = '';
+    document.body.style.backgroundImage = '';
+}
+
+
+
 
 
 

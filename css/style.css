@@ -95,7 +95,7 @@ body {
 }
 
 .anteckningbtn,
-.nybildbtn {
+.newbackgroundbtn {
     background-color: #777;
     color: #fff;
     border: none;
@@ -107,11 +107,11 @@ body {
 }
 
 .anteckningbtn:hover,
-.nybildbtn:hover {
+.newbackgroundbtn:hover {
     background-color: #666;
 }
 
-.nybildbtn {
+.newbackgroundbtn {
     position: fixed;
     bottom: 20px;
     left: 50%;
@@ -182,7 +182,7 @@ body {
         height: auto;
     }
 
-    .nybildbtn,
+    .newbackgroundbtn,
     .anteckningbtn {
         width: 90%;
         margin: 0 auto 15px;
@@ -225,4 +225,23 @@ body {
 
 #currency-rates li a:hover {
     color: #000;
+}
+
+.clearLocalStorageButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.clearLocalStorageButton:hover {
+    background-color: #333;
+    color: #fff;
 }

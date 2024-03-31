@@ -1,6 +1,5 @@
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,13 +8,13 @@ body {
 
 .header {
     text-align: center;
-    width: 20rem;
+    width: 25rem;
     max-width: 600px;
-    margin: 2rem auto;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.8);
+    margin: 3rem auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .username {
@@ -28,7 +27,7 @@ body {
 }
 
 .username h1:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .time-bold {
@@ -40,23 +39,24 @@ body {
     justify-content: center;
     width: 100rem;
     max-width: 120rem;
-    margin: 2rem auto;
+    margin: 3rem auto;
 }
 
 .dashboard-section {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-right: 20px;
     height: auto;
     max-width: 15rem;
     flex: 1;
-    padding: 20px;
+    padding: 15px;
 }
 
 .dashboard-section h3 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .dashboard-section ul {
@@ -67,8 +67,8 @@ body {
 .dashboard-section li {
     margin-bottom: 10px;
     border: 1px solid #ddd;
-    background-color: #ffffff;
-    padding: 5px;
+    background-color: #f5f5f5;
+    padding: 10px;
     border-radius: 8px;
 }
 
@@ -80,34 +80,35 @@ body {
 
 .removebtn {
     float: right;
-    background-color: white;
-    color: #796d6d;
-    border: 1px solid #8d8d8d9a;
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #ccc;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 50%;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .removebtn:hover {
-    background-color: #ff3838;
+    background-color: #ff7f7f;
     border-color: #333;
 }
 
 .anteckningbtn,
 .nybildbtn {
-    background-color: #8d8d8d9a;
-    color: #ffffff;
+    background-color: #777;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 1.3rem;
 }
 
 .anteckningbtn:hover,
 .nybildbtn:hover {
-    background-color: #b8b8b89a;
+    background-color: #666;
 }
 
 .nybildbtn {
@@ -123,8 +124,9 @@ body {
     border-radius: 5px;
     padding: 10px;
     width: 100%;
-    height: 23rem;
+    height: 25rem;
     box-sizing: border-box;
+    font-size: 1.2rem;
 }
 
 .quick-links.weather textarea::placeholder {
@@ -140,15 +142,15 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #f9f9f9;
     margin: auto;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #888;
+    border: 1px solid #999;
     margin-top: 15%;
     width: 80%;
     max-width: 500px;
@@ -173,7 +175,7 @@ body {
     .dashboard-section {
         max-width: auto;
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .dashboard-section textarea#noteInput {
@@ -183,7 +185,7 @@ body {
     .nybildbtn,
     .anteckningbtn {
         width: 90%;
-        margin: 0 auto 20px;
+        margin: 0 auto 15px;
     }
 
     .modal-content {
@@ -200,14 +202,27 @@ body {
 
     .dashboard-section {
         width: 45%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 }
 
 #currency-rates li {
-    border: 1px solid #000000;
+    border: 1px solid #333;
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+#currency-rates li:hover {
+    background-color: #ddd;
+}
+
+#currency-rates li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#currency-rates li a:hover {
+    color: #000;
 }

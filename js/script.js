@@ -181,22 +181,22 @@ function removeNote(event) {
 
 // Funktion för att byta bakgrundsbild från Unsplash API med Fetch API
 function changeBackground() {
-    var apiKey = 'muqx79WboLNW5dwW5PHViRaBY_OFICRBysXzMQiwuR0';
+    var apiKey = 'SCQQN58hb6qRwEwYdJD6sefX8niAj4Ln76EVvEKaCZY';
     var apiUrl = 'https://api.unsplash.com/photos/random?query=architecture&client_id=' + apiKey;
 
 
     fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            var newBackgroundUrl = data.urls.regular;
+    .then(response => response.json())
+    .then(data => {
+        var newBackgroundUrl = data.urls.regular;
 
-            // Ändra bakgrundsbilden på body-elementet
-            document.body.style.backgroundImage = 'url(' + newBackgroundUrl + ')';
+        // Ändra bakgrundsbilden på body-elementet
+        document.body.style.backgroundImage = 'url(' + newBackgroundUrl + ')';
 
-            // Spara den nya bakgrundsbilden i localStorage
-            localStorage.setItem('background', 'url(' + newBackgroundUrl + ')');
-        })
-        .catch(error => console.error('Det uppstod ett fel:', error));
+        // Spara den nya bakgrundsbilden i localStorage
+        localStorage.setItem('background', 'url(' + newBackgroundUrl + ')');
+    })
+    .catch(error => console.error('Det uppstod ett fel:', error));
 }
 
 
@@ -220,12 +220,6 @@ function changeUsername() {
         localStorage.setItem('username', newUsername);
     }
 }
-
-
-
-
-
-
 
 
 //<------ VÄDER ------->
